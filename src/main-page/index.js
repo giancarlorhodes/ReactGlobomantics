@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './main-page.css';
+import Header from './header';
 
 // old
 
@@ -8,16 +9,20 @@ class AppComp extends Component
 {
   render() {
       return (
-        // jsx
-        <div className="App">
-          <header className="App-header">
-            {/* src here is prop very different the html attribute */}
-            <img src={logo} className="App-logo" alt="log"/>
-            <h1 className="App-title">Welcome to React!!! My new AppComp component</h1>
-          </header>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code>
-          </p>
+        // // jsx old
+        // <div className="App">
+        //   <header className="App-header">
+        //     {/* src here is prop very different the html attribute */}
+        //     <img src={logo} className="App-logo" alt="log"/>
+        //     <h1 className="App-title">Welcome to React!!! My new AppComp component</h1>
+        //   </header>
+        //   <p className="App-intro">
+        //     To get started, edit <code>src/App.js</code>
+        //   </p>
+        // </div>
+
+        <div className="container">
+          <Header/>
         </div>
       );
   }

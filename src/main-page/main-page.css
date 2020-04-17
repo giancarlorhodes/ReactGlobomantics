@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,21 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+.logo {
+  height: 150px;
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: x-large;
+  color: coral;
+}
+
+.featuredHouse {
+  border-radius: 2px;
+  background-color: rgb(255, 190, 166);
 }
