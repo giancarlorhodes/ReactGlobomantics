@@ -1,7 +1,7 @@
 import React from 'react'; // node_modules modules // react engine
 import ReactDOM from 'react-dom'; // browser support
 import './index.css';
-import AppComp from './App'; // ./ indicates local, look in my current directory
+import AppComp from './main-page'; // ./ indicates local, look in my current directory
 import * as serviceWorker from './serviceWorker';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
