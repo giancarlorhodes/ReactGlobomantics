@@ -4,9 +4,43 @@ import './main-page.css';
 import Header from './header';
 
 // old
-
+// example of a class component - support state and lifecycle methods
 class AppComp extends Component
 {
+
+  // first step in lifecycle methods
+  constructor(props){
+    super(props);
+    this.state = {};
+  }
+
+  // occurs just after rendering
+  componentDidMount(){
+    this.fetchHouses();
+  }
+
+  // build a arrow function to fetch the Houses
+  fetchHouses = () => {
+    fetch('/houses.json')
+    .then(response => response.json())
+    .then(allHouses => {
+      this.allHouses = allHouses;
+      this.determineFeaturedHouse();
+    })
+  }
+  
+  
+  determineFeaturedHouse = () => {
+
+    if (this.allHouses){
+      const randomIndex = Math.floor(Math.random() * this.allHouses.length);
+      const featuredHouse = this.allHouses[randomIndex];
+      this.setState({ featuredHouse });
+    }
+
+  }
+
+
   render() {
       return (
         // // jsx old
@@ -22,7 +56,7 @@ class AppComp extends Component
         // </div>
 
         <div className="container">
-          <Header/>
+          <Header subtitle="Providing houses in Columbia, Missouri"/>
         </div>
       );
   }
