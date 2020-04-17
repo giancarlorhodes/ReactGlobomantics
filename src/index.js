@@ -1,8 +1,9 @@
-import React from 'react'; // node_modules modules
-import ReactDOM from 'react-dom';
+import React from 'react'; // node_modules modules // react engine
+import ReactDOM from 'react-dom'; // browser support
 import './index.css';
-import App from './App'; // ./ indicates local, look in my current directory
+import AppComp from './App'; // ./ indicates local, look in my current directory
 import * as serviceWorker from './serviceWorker';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 // entry point for the application
 
@@ -14,7 +15,7 @@ import * as serviceWorker from './serviceWorker';
 //  document.getElementById('root')
 //);
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(<AppComp/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
