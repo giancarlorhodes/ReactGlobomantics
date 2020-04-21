@@ -2,9 +2,9 @@ import React from 'react';
 import logo from './GloboLogo.png';
 
 
-// function component that just output that outputs jsx directly
-// simpler and more direct for a bit of jsx - no state, no lifecycle
-// inside the () is where we might pass our props - State, Render() from the outside into the component
+// function component that just outputs jsx directly
+// simpler and more direct for doing a bit of jsx - no state, no lifecycle
+// inside the () is where we might pass our props (arguments passed in from the outside) 
 // props is intented to be a read-only object
 const Header = (props) => (
     <header className="row">
