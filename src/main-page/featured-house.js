@@ -1,6 +1,8 @@
 import React from 'react';
 import House from '../house';
 
+
+// sfc - stateless function component
 const FeaturedHouse  = (props) => {
     
     if (props.house) return (  

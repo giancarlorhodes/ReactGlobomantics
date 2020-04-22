@@ -1,8 +1,10 @@
 import React, { Component } from 'react';   
 import "./house.css";
 
+
+// cc class component
 class house extends Component {
-    state = {  }
+    state = {  } // property initializer
     render() {
         const house = this.props.house;   
         return (  
