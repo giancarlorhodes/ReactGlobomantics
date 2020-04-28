@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './main-page.css';
-import Header from './header';
+import Heady from './header';
 import FeaturedHouse from './featured-house';
 import HouseFilter from './house-filter';
 import SearchResults from '../search-results';
@@ -9,7 +9,7 @@ import HouseDetail from '../house';
 
 // old
 // example of a class component - support state and lifecycle methods
-class AppComp extends Component
+class App extends Component
 {
 
   // example of property intializer
@@ -121,7 +121,7 @@ class AppComp extends Component
       activeComponent = <FeaturedHouse house={this.state.featuredHouse} />;
     return (
       <div className="container">
-        <Header subtitle="Providing houses all over the world"/>
+        <Heady subtitle="Providing houses all over the world"/>
         <HouseFilter countries={this.state.countries} filterHouses={this.filterHouses} />
         {activeComponent}
       </div>
@@ -155,4 +155,4 @@ class AppComp extends Component
 //   );
 // }
 
-export default AppComp;
+export default App;

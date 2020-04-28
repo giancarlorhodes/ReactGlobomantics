@@ -19,4 +19,6 @@ const Header = (props) => (
 );
 
 
-export default Header;
+class Testing{}
+
+export default Header; // when we use the default keyword, it allows the importing file to use a name of it's choosing and no {} needed
